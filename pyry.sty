@@ -1,0 +1,57 @@
+% Pyry Lahtinen
+% Luotu 2022-05-17
+
+\ProvidesPackage{pyry}
+
+
+
+% paketteja
+\RequirePackage{amsmath}
+\RequirePackage{amssymb}
+\RequirePackage{geometry}
+\RequirePackage{units}
+\RequirePackage{xifthen}
+\RequirePackage{subfiles}
+
+
+
+% sivun asetukset
+\geometry{margin=1.2in}
+
+
+
+% lyhenteita
+\newcommand{\R}{\mathbb R}
+\newcommand{\N}{\mathbb N}
+\newcommand{\C}{\mathbb C}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Zp}{\mathbb Z_+}
+
+\newcommand{\Ra}{\Rightarrow}
+\newcommand{\lra}{\leftrightarrow}
+\newcommand{\todo}{\textbf{TODO}}
+
+\newcommand{\vv}{\bar v}
+\newcommand{\vu}{\bar u}
+\newcommand{\vw}{\bar w}
+\newcommand{\vz}{\bar 0}
+\newcommand{\vi}{\bar i}
+\newcommand{\vj}{\bar j}
+\newcommand{\vk}{\bar k}
+\newcommand{\ve}{\bar e}
+
+\newcommand{\f}[2]{\frac{#1}{#2}}
+\newcommand{\df}[2]{\nicefrac{#1}{#2}}
+
+
+% matriisin sarakekustomointi
+% sallii hakasulut esim nain:		\begin{bmatrix}[ccc|c]
+% https://texblog.net/latex-archive/maths/amsmath-matrix/ 2022-05-18
+\makeatletter
+\renewcommand*\env@matrix[1][*\c@MaxMatrixCols c]{%
+  \hskip -\arraycolsep
+  \let\@ifnextchar\new@ifnextchar
+  \array{#1}}
+\makeatother
+
