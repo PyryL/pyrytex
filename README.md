@@ -1,44 +1,44 @@
 # PyryTex
 
-<!-- Luotu 2022-09-06 -->
+<!-- Created on 2022-09-06 -->
 
-PyryTex on LaTeX-paketti, jonka tarkoitus on helpottaa yliopistomatikan tehtävien ratkomista.
-
-
-## Asennus
-
-**Huono ratkaisu:** Kopioi `pyry.sty` aina samaan kansioon `main.tex`:n kanssa. Toimii vain niissä kansioissa, joissa sty-tiedosto on.
-
-**Parempi ratkaisu:** Aseta tiedosto `pyry.sty` paikkaan `~/Library/texmf/tex/latex/pyry/pyry.sty`. Toimii kaikkialla yhdellä kertaa.
-
-Jos compiler valittaa, ettei jotain pakettia löydy, sen voi asentaa näin: `sudo tlmgr install PAKETTI`
+PyryTex is a LaTeX package which is intended to ease writing mathematical documents for university courses.
 
 
-## Käyttö
+## Installation
 
-Paketin voi käyttää näin:
+These instructions are for macOS only. For other platforms, search for help online.
 
-**main.tex**
+1. Place the file `pyry.sty` into `~/Library/texmf/tex/latex/pyry/pyry.sty`.
+2. If your LaTeX compiler warns about missing packages, install them with command `sudo tlmgr install <PACKAGE>`
+
+If you cannot follow the instructions above for some reason, you can also copy the `pyry.sty` file into every directory in which you want to use it. This is obviously a lot worse option.
+
+## Usage
+
+Below is an example of how you can use PyryTex.
+
+**working_directory/main.tex**
 
 ```LaTeX
 \documentclass{article}
 \usepackage{pyry}
-\title{Pääotsikko}
-\date{Päivämäärä}
-\author{Alaotsikko}
+\title{Main title}
+\author{Subheading}
+\date{Current date}
 \begin{document}
 
 \maketitle
 
-\section*{Harjoitus 1}
-\subfile{teht1}		% tiedoston nimi ilman .tex-päätettä
+\section*{Exercise 1}
+\subfile{exercise1}
 
 % ...
 
 \end{document}
 ```
 
-**teht1.tex**
+**working_directory/exercise1.tex**
 
 ```LaTeX
 \documentclass[main.tex]{subfiles}
