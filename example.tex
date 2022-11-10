@@ -1,0 +1,66 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{pyrytex}
+\title{Example usage of PyryTex}
+\author{Pyry Lahtinen}
+\date{2022-11-09}
+\begin{document}
+
+\maketitle
+
+\section{Abbreviations}
+PyryTex includes numerous abbreviations for frequently used characters.
+
+\begin{figure}[h]
+    \centering\begin{tabular}{c|c}
+        Command & Output \\
+        \hline
+        \verb!\R! & $\R$ \\
+        \verb!\N! & $\N$ \\
+        \verb!\C! & $\C$ \\
+        \verb!\Q! & $\Q$ \\
+        \verb!\Z! & $\Z$ \\
+        \verb!\Zp! & $\Zp$ \\
+        \verb!\vv! & $\vv$ \\
+        \verb!\vu! & $\vu$ \\
+        \verb!\vw! & $\vw$ \\
+        \verb!\vz! & $\vz$ \\
+        \verb!\vi! & $\vi$ \\
+        \verb!\vj! & $\vj$ \\
+        \verb!\vk! & $\vk$ \\
+        \verb!\ve! & $\ve$ \\
+        \verb!\f{1}{2}! & $\f12$ \\
+        \verb!\df{1}{2}! & $\df12$
+    \end{tabular}
+\end{figure}
+
+\section{Included packages}
+The following packages are imported automatically by PyryTex:
+amsmath, amssymb, amsthm, geometry, units, xifthen, subfiles, graphicx, enumitem, listings
+
+\section{Marking something as a work in progress}
+Use the command \verb!\todo! to achieve this behaviour.
+
+\todo
+
+\section{Matrices}
+Vertical lines can easily be added to matrices with a custom bracket parameter:
+
+\begin{minipage}{0.5\textwidth}
+    \begin{verbatim}
+        \begin{bmatrix}[cc|c]
+            8 & 9 & 12 \\
+            5 & 2 & -2
+        \end{bmatrix}
+    \end{verbatim}
+\end{minipage}%
+\hfill
+\begin{minipage}{0.5\textwidth}
+    \begin{equation*}
+        \begin{bmatrix}[cc|c]
+            8 & 9 & 12 \\
+            5 & 2 & -2
+        \end{bmatrix}
+    \end{equation*}
+\end{minipage}
+
+\end{document}

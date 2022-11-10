@@ -1,6 +1,11 @@
-*.tex
+# all common output file types that
+# are exported by LaTeX compilers
 *.aux
 *.log
 *.synctex.gz
 *.pdf
+*.fdb_latexmk
+*.fls
+
+# macOS system file
 .DS_Store
