@@ -35,12 +35,18 @@ PyryTex includes numerous abbreviations for frequently used characters.
 
 \section{Included packages}
 The following packages are imported automatically by PyryTex:
-amsmath, amssymb, amsthm, geometry, units, xifthen, subfiles, graphicx, enumitem, listings
+amsmath, amssymb, amsthm, geometry, units, subfiles, graphicx, enumitem, listings
 
 \section{Marking something as a work in progress}
-Use the command \verb!\todo! to achieve this behaviour.
+Use the command \verb!\todo! to achieve this behaviour:
 
 \todo
+
+You can also give some content to it with syntax \verb!\todo[Needs fixing]!, which will appear like this:
+
+\todo[Needs fixing]
+
+The margin marking alone can be added with command \verb!\marginexclamation!.
 
 \section{Matrices}
 Vertical lines can easily be added to matrices with a custom bracket parameter:
