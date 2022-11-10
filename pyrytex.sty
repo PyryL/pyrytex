@@ -14,11 +14,11 @@
 \RequirePackage{amsthm}
 \RequirePackage{geometry}
 \RequirePackage{units}
-\RequirePackage{xifthen}
 \RequirePackage{subfiles}
 \RequirePackage{graphicx}
 \RequirePackage{enumitem}
 \RequirePackage{listings}
+\RequirePackage{xcolor}
 
 
 
@@ -29,8 +29,6 @@
 \newcommand{\Q}{\mathbb Q}
 \newcommand{\Z}{\mathbb Z}
 \newcommand{\Zp}{\mathbb Z_+}
-\newcommand{\todo}{\textbf{TODO}}
-\newcommand{\qed}{\hfill$\square$}
 
 \newcommand{\vv}{\bar v}
 \newcommand{\vu}{\bar u}
@@ -43,6 +41,12 @@
 
 \newcommand{\f}[2]{\frac{#1}{#2}}
 \newcommand{\df}[2]{\nicefrac{#1}{#2}}
+
+
+\newcommand{\marginexclamation}{\marginpar{\color{red}\Huge\textbf{!}}}
+\NewDocumentCommand{\todo}{o}{%
+  \IfNoValueTF{#1}{\textbf{TODO}}{\textbf{TODO: #1}}\marginexclamation%
+}
 
 
 % allows the usage of bracket parameter in matrices
