@@ -4,7 +4,7 @@
 % Originally created on 2022-05-17
 % https://github.com/PyryL/pyrytex
 
-\ProvidesPackage{pyrytex}[2022/11/09]
+\ProvidesPackage{pyrytex}[2022/11/20]
 
 
 
@@ -19,6 +19,7 @@
 \RequirePackage{enumitem}
 \RequirePackage{listings}
 \RequirePackage{xcolor}
+\RequirePackage[gen]{eurosym}
 
 
 
@@ -38,6 +39,9 @@
 \newcommand{\vj}{\bar j}
 \newcommand{\vk}{\bar k}
 \newcommand{\ve}{\bar e}
+
+\renewcommand{\deg}{^\circ}
+\newcommand{\eur}{\euro{}}
 
 \newcommand{\f}[2]{\frac{#1}{#2}}
 \newcommand{\df}[2]{\nicefrac{#1}{#2}}
