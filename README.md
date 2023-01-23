@@ -18,33 +18,41 @@ If you cannot follow the instructions above for some reason, you can also copy t
 
 Below is an example of how you can use PyryTex.
 
-**working_directory/main.tex**
+**main.tex**
 
 ```LaTeX
 \documentclass{article}
+% \usepackage[finnish]{babel}
 \usepackage{pyry}
+\addbibresource{references.bib}
 \title{Main title}
-\author{Subheading}
-\date{Current date}
+\author{Your name}
+\date{Deadline date}
 \begin{document}
 
 \maketitle
 
-\section*{Exercise 1}
 \subfile{exercise1}
 
 % ...
 
+\printbibliography
+
 \end{document}
 ```
 
-**working_directory/exercise1.tex**
+**exercise1.tex**
 
 ```LaTeX
 \documentclass[main.tex]{subfiles}
 \begin{document}
 
+\section*{Exercise 1}
 % ...
 
 \end{document}
 ```
+
+**references.bib**
+
+Place your references here in BibTeX format.
