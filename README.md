@@ -23,7 +23,7 @@ Below is an example of how you can use PyryTex.
 ```LaTeX
 \documentclass{article}
 % \usepackage[finnish]{babel}
-\usepackage{pyry}
+\usepackage{pyrytex}
 \addbibresource{references.bib}
 \title{Main title}
 \author{Your name}
