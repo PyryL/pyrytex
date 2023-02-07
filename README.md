@@ -34,6 +34,8 @@ Below is an example of how you can use PyryTex.
 
 \subfile{exercise1}
 
+You \cite{EXMPL} can cite references like this.
+
 % ...
 
 \printbibliography
@@ -56,3 +58,13 @@ Below is an example of how you can use PyryTex.
 **references.bib**
 
 Place your references here in BibTeX format.
+
+```
+@book{EXMPL,
+	author = {John Doe},
+	title = {Example title},
+	publisher = {Publisher Inc.},
+	isbn = {12349876},
+	year = {2023}
+}
+```
