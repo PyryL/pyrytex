@@ -11,6 +11,7 @@ PyryTex is a LaTeX package which is intended to ease writing mathematical docume
 
 1. Create directory `/usr/share/texmf/tex/latex/pyrytex`.
 2. Copy `pyry.sty` into that folder.
+3. Run `texhash` to update caches.
 
 ### macOS
 
