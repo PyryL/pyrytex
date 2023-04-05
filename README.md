@@ -13,6 +13,8 @@ PyryTex is a LaTeX package which is intended to ease writing mathematical docume
 2. Copy `pyry.sty` into that folder.
 3. Run `texhash` to update caches.
 
+Depending on the way you have installed your LaTeX, some packages may be missing. Install them manually by following [this guide](https://wiki.debian.org/Latex).
+
 ### macOS
 
 1. Place the file `pyry.sty` into `~/Library/texmf/tex/latex/pyry/pyry.sty`.
